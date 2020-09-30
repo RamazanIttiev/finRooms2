@@ -1,0 +1,243 @@
+.header {
+  border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+  background-color: rgba(16, 15, 13, 0.3);
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  &__item {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0 20px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      border: none;
+    }
+  }
+  &__link,
+  &__signup {
+    font-size: 16px;
+    color: #d7d5d5;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+    cursor: pointer;
+    &:hover {
+      color: #00d563;
+    }
+    &:active {
+      color: #d7d5d5;
+    }
+  }
+  &__signup {
+    margin-left: auto;
+  }
+}
+.promo {
+  padding: 180px 0 30px 0;
+  background: url('../img/promo__bgr.jpg') no-repeat top/cover;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 160px;
+  }
+  &__title {
+    font-size: 66px;
+    color: white;
+  }
+  &__paragraph {
+    line-height: 1.44;
+    font-size: 18px;
+    max-width: 740px;
+    text-align: center;
+    color: white;
+  }
+  &__card {
+    &-wrapper {
+      display: flex;
+      margin-top: 110px;
+    }
+  }
+  &__form {
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    max-width: 700px;
+    width: 100%;
+  }
+  &__label {
+    display: block;
+    color: grey;
+    font-size: 12px;
+    line-height: 1.25;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+    text-align: left;
+  }
+  &__input {
+    cursor: pointer;
+    border: 1px solid transparent;
+    box-shadow: none;
+    border-radius: 4px;
+    display: block;
+    padding: 12px 18px 13px;
+    font-size: 16px;
+    color: grey;
+    margin: 0 3px;
+    height: 44px;
+    outline: none;
+  }
+  &__terms {
+    color: grey;
+    font-size: 12px;
+    line-height: 1.25;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px dotted grey;
+    text-decoration: none;
+    transition: border-color 0.3s ease-out;
+    &:hover {
+      color: grey;
+      border-color: transparent;
+    }
+  }
+  &__checkbox {
+    position: absolute;
+    left: 0;
+    &-wrapper {
+      position: absolute;
+      bottom: -55px;
+      right: 20px;
+      width: 200px;
+    }
+  }
+  &__card {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-right: 1px solid #535353;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      border: none;
+    }
+    &-title {
+      color: $cardTitleColor;
+      margin-top: 10px;
+      font-size: 34px;
+    }
+    &-subtitle {
+      color: $cardSubtitleitleColor;
+    }
+  }
+}
+.reasons {
+  padding: 40px 0 90px;
+  &__title {
+    text-align: center;
+  }
+  &__card {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    padding: 65px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      border-color: $signupColor;
+    }
+    &:hover .reasons__card-signup,
+    &:hover .reasons__card-signup svg {
+      color: $signupColor;
+      fill: $signupColor;
+    }
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 70px;
+    }
+    &-title {
+      font-size: 20px;
+      margin-bottom: 5px;
+      font-weight: 700;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      color: #515151;
+    }
+    &-subtitle {
+      color: $cardSubtitleitleColor;
+      margin-bottom: 30px;
+    }
+    &-signup {
+      position: absolute;
+      bottom: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      color: transparent;
+      transition: 0.5s;
+      &:hover {
+        color: $signupColorHover;
+      }
+      &:active {
+        color: $signupColor;
+      }
+    }
+    &-signup svg {
+      fill: transparent;
+    }
+  }
+}
+.platform {
+  background-color: #fbfbfb;
+
+  padding: 100px 0 0;
+}
+.about {
+  padding: 100px 0 100px;
+
+  &__wrapper {
+    display: flex;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__subtitle {
+    margin-bottom: 28px;
+    font-size: 16px;
+    color: gray;
+  }
+  &__img {
+    width: 100%;
+    max-width: 810px;
+  }
+  &__signup {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: $signupColor;
+    transition: 0.5s;
+    &:hover {
+      color: $signupColorHover;
+    }
+    &:active {
+      color: $signupColor;
+    }
+  }
+}
