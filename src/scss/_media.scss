@@ -1,0 +1,459 @@
+@media all and (max-width: 1200px) {
+  .title {
+    font-size: 30px;
+  }
+  .promo {
+    background: url('../img/promo__bgr_mobile.jpg') center top no-repeat fixed #050504;
+    &__title {
+      font-size: 57px;
+    }
+    &__paragraph {
+      font-size: 16px;
+    }
+    &__card {
+      &-title {
+        font-size: 27px;
+      }
+      &-subtitle {
+        font-size: 14px;
+      }
+    }
+  }
+  .reasons {
+    &__card {
+      &-title {
+        font-size: 16px;
+      }
+      &-subtitle {
+        font-size: 15px;
+      }
+      &-signup {
+        display: none;
+      }
+    }
+  }
+  .platform {
+    &__img {
+      display: none;
+      &-mobile {
+        display: block;
+        width: 100%;
+        max-width: 530px;
+      }
+    }
+  }
+  .about {
+    &__img {
+      max-width: 400px;
+    }
+  }
+}
+@media all and (max-width: 991px) {
+  .title {
+    font-size: 30px;
+  }
+  .button {
+    padding: 10px 5px;
+    &:hover {
+      background: $signupColor;
+    }
+  }
+
+  .header {
+    &__wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__nav {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      width: 50%;
+      height: 100vh;
+      background-color: #d6d6d6;
+      top: 0;
+      left: -50%;
+      padding: 25px 0 0;
+      z-index: 4;
+      overflow-y: auto;
+      transition: left 1s;
+      &_active {
+        left: 0;
+      }
+    }
+    &__logo {
+      &_menu {
+        display: block;
+        margin-left: 40px;
+      }
+    }
+    &__list {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 30px 0 0 30px;
+    }
+    &__link {
+      width: 100%;
+      text-align: center;
+      color: #515151;
+      display: block;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    &__item {
+      padding: 0;
+      border: none;
+    }
+    &__humburger {
+      outline: none !important;
+      display: block;
+      border: none;
+      background: transparent;
+      width: 40px;
+      height: 25px;
+      padding: 0;
+      z-index: 3;
+      transition: transform 0.5s;
+      &_active {
+        position: fixed;
+        right: 15px;
+        .header__humburger-div {
+          transition: transform 0.6s;
+
+          &:nth-child(1) {
+            transform: translateY(4px) rotate(-45deg);
+          }
+
+          &:nth-child(2) {
+            display: none;
+          }
+
+          &:last-child {
+            transform: translateY(1px) rotate(45deg);
+          }
+        }
+      }
+      &-div {
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin: 0 auto;
+        display: block;
+        background: white;
+        transition: transform 0.5s;
+
+        &:nth-child(2) {
+          margin: 8px auto;
+        }
+      }
+    }
+    &__signup {
+      display: none;
+    }
+  }
+
+  .promo {
+    &__title {
+      font-size: 58px;
+    }
+    &__paragraph {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    &__card {
+      padding-left: 20px;
+      padding-right: 20px;
+      &-title {
+        display: none;
+        &_mobile {
+          color: $cardTitleColor;
+          margin-top: 10px;
+          font-size: 40px;
+          display: block;
+        }
+      }
+      &-subtitle {
+        font-size: 16px;
+      }
+    }
+    &__checkbox-wrapper {
+      right: 7px;
+    }
+  }
+  .reasons {
+    &__card {
+      text-align: center;
+      padding: 65px 10px;
+    }
+  }
+  .platform {
+    &__img {
+      &-mobile {
+        display: block;
+        width: 45%;
+        height: 200px;
+      }
+    }
+  }
+  .about {
+    &__wrapper {
+      justify-content: space-around;
+    }
+    &__info {
+      width: 45%;
+    }
+    &__img {
+      display: block;
+      width: 45%;
+      max-height: 280px;
+      max-width: 75%;
+      margin: 0 auto;
+    }
+  }
+  .popup {
+    width: 50%;
+  }
+  .footer {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__warning {
+      margin-top: 50px;
+    }
+  }
+  .subfooter {
+    display: flex;
+    flex-direction: column;
+    &__apps {
+      margin-bottom: 20px;
+    }
+    &__download {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+    &__list {
+      width: 100%;
+    }
+  }
+}
+@media all and (max-width: 767px) {
+  .title {
+    font-size: 30px;
+  }
+  .header {
+    padding: 20px 0px;
+    &__nav {
+      width: 70%;
+      left: -70%;
+      &_active {
+        left: 0%;
+      }
+    }
+  }
+  .promo {
+    &__paragraph {
+      font-size: 15px;
+    }
+    &__form {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__button {
+      margin-top: 20px;
+    }
+    &__checkbox {
+      &-wrapper {
+        bottom: -25px;
+        width: auto;
+      }
+    }
+    &__card {
+      padding-left: 10px;
+      padding-right: 10px;
+      &-title {
+        &_mobile {
+          font-size: 30px;
+        }
+      }
+      &-subtitle {
+        font-size: 12px;
+      }
+    }
+  }
+  .reasons {
+    &__card {
+      border: none;
+      padding: 15px 10px;
+      flex-direction: initial;
+      align-items: end;
+      & svg {
+        margin-right: 20px;
+      }
+      & div {
+        text-align: start;
+      }
+      &-title {
+        font-size: 18px;
+      }
+      &-subtitle {
+        text-align: inherit;
+      }
+      &-info {
+        align-items: start;
+      }
+    }
+  }
+  .platform {
+    &__img {
+      &-mobile {
+        width: 100%;
+        height: 270px;
+        margin-top: 30px;
+        max-width: 90%;
+      }
+    }
+    &__info {
+      width: 100%;
+    }
+  }
+  .about {
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__box {
+      justify-content: space-between;
+    }
+    &__info {
+      width: 50%;
+    }
+  }
+  .video {
+    &__box {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    &__info {
+      width: 100%;
+    }
+  }
+  .popup {
+    width: 100%;
+  }
+  .footer {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__warning {
+      margin-top: 40px;
+    }
+  }
+  .subfooter {
+    &__apps {
+      margin: 0 0 30px;
+      &:first-child {
+        margin: 0 0 30px;
+      }
+    }
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
+}
+@media all and (max-width: 567px) {
+  .title {
+    font-size: 18px;
+  }
+  .header {
+    &__nav {
+      width: 80%;
+      left: -80%;
+      &_active {
+        left: 0%;
+      }
+    }
+  }
+  .promo {
+    padding: 120px 0 30px 0;
+    &__wrapper {
+      margin-bottom: 100px;
+    }
+    &__card {
+      padding: 20px 0;
+      display: flex;
+      flex-direction: row;
+      border: none;
+      justify-content: center;
+      & svg {
+        margin-right: 20px;
+      }
+      &-wrapper {
+        display: block;
+        position: relative;
+      }
+      &-info {
+        width: 75%;
+      }
+    }
+    &__input {
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+    &__checkbox-wrapper {
+      bottom: -40px;
+    }
+  }
+  .reasons {
+    padding: 40px 0 20px;
+  }
+  .platform {
+    padding: 70px 0 50px;
+    &__img-mobile {
+      height: 170px;
+      max-width: 100%;
+    }
+  }
+  .about {
+    padding: 50px 0 50px;
+    &__box {
+      flex-direction: column;
+    }
+    &__info {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__img {
+      width: 100%;
+    }
+    &__mobile {
+      flex-direction: column-reverse;
+    }
+  }
+  .popup {
+    &__footer {
+      justify-content: space-between;
+    }
+  }
+  .footer {
+    &__warning {
+      margin-top: 60px;
+    }
+  }
+  .subfooter {
+    &__list,
+    &__apps {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__download {
+      &:first-child {
+        margin: 0 0 10px;
+      }
+    }
+  }
+}
