@@ -13,6 +13,7 @@ $(document).ready(function () {
   let $logo2 = $('#logo2');
   let $headerLink = $('.header__link');
   let $headerSignUp = $('.header__signup');
+  let $headerHumburger = $('.header__humburger-div');
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > 600 && $menu.hasClass('header')) {
@@ -30,9 +31,11 @@ $(document).ready(function () {
     } else if ($menu.hasClass('header__fixed')) {
       $headerLink.css('color', 'black');
       $headerSignUp.css('color', 'black');
+      $headerHumburger.css('background', 'black');
     } else if ($menu.hasClass('header')) {
       $headerLink.css('color', '#d7d5d5');
       $headerSignUp.css('color', '#d7d5d5');
+      $headerHumburger.css('background', 'white');
     }
   });
 });
